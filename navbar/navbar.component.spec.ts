@@ -2,6 +2,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavbarComponent } from './navbar.component';
 
+  document.getElementById("myButton").addEventListener("click", function() {
+    alert("Kliknięto przycisk!");
+  });
+
 describe('NavbarComponent', () => {
   let component: NavbarComponent;
   let fixture: ComponentFixture<NavbarComponent>;
@@ -15,6 +19,8 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
+
+  
   it('should create', () => {
     expect(component).toBeTruthy();
   });
