@@ -27,35 +27,66 @@
 </div>
 
 <ul class="weekdays">
-  <li *ngFor="let Day of config.Day">{{ Day }}</li>
+   <li *ngFor="let Day of config.Day">{{ Day }}</li> 
+
 </ul>
 
 <ul class="days">  
-  <table>
-    <!--<tr>
-      <th><li *ngFor="let Monday config.Monday">{{ WeekDays }}</li></th>
-      <th><li *ngFor="let Tuesday of config.Tuesday">{{ Tuesday }}</li></th>
-      <th><li *ngFor="let Wednesday of config.Wednesday">{{ Wednesday }}</li></th>
-      <th><li *ngFor="let Thursday of config.Thursday">{{ Thursday}}</li></th>
-      <th><li *ngFor="let Friday of config.Friday">{{ Friday }}</li></th>
-      <th><li *ngFor="let Saturday of config.Saturday">{{ Saturday }}</li></th>
-      <th><li *ngFor="let SunDay of config.SunDay">{{ Saturday }}</li></th>
   
-    </tr>-->
-  
-    <ul class="days">
-      <table>
+   
+    <li *ngFor="let Monday of config.Monday">{{ Monday }}</li> 
+
+    <li *ngFor="let Tuesday of config.Tuesday">{{ Tuesday }}</li> 
+    <li *ngFor="let Wednesday of config.Wednesday">{{ Wednesday }}</li> 
+    <li *ngFor="let Thursday of config.Thursday">{{ Thursday }}</li> 
+    <li *ngFor="let Friday of config.Friday">{{ Friday }}</li> 
+    <li *ngFor="let Saturday of config.Saturday">{{ Saturday }}</li>
+    <li *ngFor="let SunDay of config.SunDay">{{ SunDay }}</li>
+      <!--
+           <li *ngFor="let Tuesday of config.Tuesday">{{ Tuesday }}</li> 
+      <li *ngFor="let Wednesday of config.Wednesday">{{ Wednesday }}</li> 
+      <li *ngFor="let Thursday of config.Thursday">{{ Thursday }}</li> 
+      <li *ngFor="let Friday of config.Friday">{{ Friday }}</li> 
+      <li *ngFor="let Saturday of config.Saturday">{{ Saturday }}</li>
+      <li *ngFor="let SunDay of config.SunDay">{{ SunDay }}</li>
+     
+        <tbody>
         <tr>
-          <th><li *ngFor="let day of config.Day">{{ day }}</li></th>
+            <td><li *ngFor="let Monday of config.Monday">{{ Monday }}</li></td>
+       
         </tr>
-      </table>
-    </ul>
+        <tr>
+            <td><li *ngFor="let Tuesday of config.Tuesday">{{ Tuesday }}</li> </td>
+   
+        </tr>
+        <tr>
+            <td><li *ngFor="let Wednesday of config.Wednesday">{{ Wednesday }}</li> </td>
+       
+        </tr>
+        <tr>
+            <td><li *ngFor="let Thursday of config.Thursday">{{ Thursday }}</li> </td>
+
+        </tr>
+        <tr>
+            <td><li *ngFor="let Friday of config.Friday">{{ Friday }}</li> </td>
+       
+        </tr>
+        <tr>
+            <td><li *ngFor="let Saturday of config.Saturday">{{ Saturday }}</li></td>
+      
+        </tr>
+        <tr>
+          <td><li *ngFor="let SunDay of config.SunDay">{{ SunDay }}</li></td>
     
-    
-  </table>
-  
- 
-</ul>
+      </tr>
+      </tbody>
+</table> -->
+
+<!--
+<li *ngFor="let WeekDays of config.WeekDays">{{ WeekDays }}</li>
+-->
+
+ </ul>
 
 </body>
 </html>
