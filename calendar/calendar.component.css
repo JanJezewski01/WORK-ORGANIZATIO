@@ -11,20 +11,6 @@ body {font-family: Verdana, sans-serif;}
   border-radius: 10px;
   
 }
-
-.month ul {
-  margin: 5px;
-  padding: 5px;
-}
-
-.month ul li {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  border-radius: 10px;
-}
-
 .month .prev {
   float: left;
   padding-top: 10px;
@@ -36,115 +22,21 @@ body {font-family: Verdana, sans-serif;}
   padding-top: 10px;
 }
 
-/* style.css */
-.sidebar {
-  width: 250px;
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  padding: 20px;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar li {
-  margin: 10px 0;
-}
-
-.sidebar a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.content {
-  margin-left: 270px; /* aby uwzględnić szerokość paska bocznego */
-  padding: 20px;
-}
-/**/
-.weekDays{
-  background: #666;
-  height: 130px;
-  margin-left: none;
-  margin-right: 95%;
-  border-radius: 10px;
-  
-}
-.days {
-  background: #0000005e;
-  border-radius: 10px;
-  margin-left: 10%;
- 
- 
-}
-.days li {
-  
-  list-style-type: none;
-  width: 13.6%;
-  text-align: center;
-  padding: 10px;
-  font-size: 29px;
-  color: #d6d1d1;
-}
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
 }
 
 
-
-month ul button {
-  color: rgb(58, 55, 55);
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+aside {
+  border-right: 1px solid #3b3939;
+  grid-area: sidebar;
+  padding-right: 10px;
+  font-size: 0.8em;
 }
 
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-
-
-
-.days button {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-.days button .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: rgb(87, 84, 84) !important
-}
-
-/* Add media queries for smaller screens */
-@media screen and (max-width:720px) {
-  .weekdays button, .days button {width: 13.1%;}
-}
-
-@media screen and (max-width: 420px) {
-  .weekdays button, .days button {width: 12.5%;}
-  .days button .active {padding: 2px;}
-}
-
-@media screen and (max-width: 290px) {
-  .weekdays button, .days button {width: 12.2%;}
-}
