@@ -1,7 +1,6 @@
 
 
-<html>
-
+<!--
 <body style="border-radius: 10px;">
 
 
@@ -21,9 +20,10 @@
     </li>
   </ul>
 </div>
-<!--
+
+
 <ul class="weekdays">
-   <li *ngFor="let Day of config.Day">{{ Day }}</li> 
+   
 
 </ul>
 -->
@@ -46,16 +46,18 @@
 
     -->
     
-</body>
+    <section class="layout">
+      <div class="sidebar">
+        <li *ngFor="let Day of config.Day">{{ Day }}</li> 
+        <li *ngFor="let Day of config.Day">{{ Day }}</li> 
+        <li *ngFor="let Day of config.Day">{{ Day }}</li> 
+        <li *ngFor="let Day of config.Day">{{ Day }}</li>
+        
+        
+      </div>
+      <div class="body">
+        <li *ngFor="let WeekDays of config.WeekDays">{{ WeekDays }}</li>
+      </div>
+    </section>
 
-<aside>
-  <h2>Other things</h2>
-  <p>
-    Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada
-    ultrices. Phasellus turpis est, posuere sit amet dapibus ut, facilisis sed
-    est.
-  </p>
- 
-</aside>
 
-</html>

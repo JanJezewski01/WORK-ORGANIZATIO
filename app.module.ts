@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { WeatherComponent } from './weather/weather.component';
 import { WeekDaysComponent } from './week-days/week-days.component';
-import { PlaygroundComponent } from './playground/playground.component';
+
 
 
 
@@ -14,8 +14,7 @@ import { PlaygroundComponent } from './playground/playground.component';
     CalendarComponent,
     WeatherComponent,
     WeekDaysComponent,
-    PlaygroundComponent,
-   
+  
     
    
   ],
